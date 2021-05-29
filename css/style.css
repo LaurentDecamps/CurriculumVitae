@@ -1,0 +1,44 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.elementNavigation {
+    font-weight: 500;
+}
+
+.elementNavigation a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* .mescompetences{
+    
+} */
+
+.pistache-cacahuete{
+    text-align: center;
+}
+
+.scratch{
+    text-align: center;
+}
+
+.github {
+    text-align: center;
+}
+
+.github img{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.contactez-moi{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
