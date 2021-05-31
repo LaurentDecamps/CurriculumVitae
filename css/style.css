@@ -1,10 +1,20 @@
+*{
+    Font-family: Helvetica;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
 .navigation {
     display: flex;
     justify-content: space-around;
 }
 
 .elementNavigation {
-    font-weight: 500;
+    font-weight: 550;
+    font-size: larger;
 }
 
 .elementNavigation a {
@@ -15,6 +25,17 @@ h1 {
     text-align: center;
 }
 
+#followme {
+    text-align: left;
+}
+
+footer{
+    padding-top: 10px;
+    border-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aquamarine; */
+}
 /* .mescompetences{
     
 } */
@@ -41,4 +62,24 @@ h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+/* .divers{
+
+} */
+
+.realisation {
+    display: flex;
+    flex-direction: co;
+    justify-content: center;
+}
+
+.competences {
+    display: flex;
+    flex-direction: co;
+    justify-content: center;
+}
+
+.competences img {
+    padding: 10px;
 }
