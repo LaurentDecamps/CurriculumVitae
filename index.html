@@ -6,12 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Javascript pour le bouton retour en haut -->
+    <script src="/js/javascript.js"></script>
     <title>Laurent Décamps Curriculum Vitae</title>
 </head>
 
 <body>
     <!-- Bienvenue dans mon code ;) -->
-    <img src="./media/Banniere.jfif" alt="Bannière L homme vaut par ce qu'il est non par ce qu'il a">
+
+    <!-- Bouton retour en haut -->
+    <button onclick="topFonction()" id="monBoutonTop" title="Retour en haut">Retour</button>
+
+    <!-- L'image en fond (parallax) NE MARCHE PAS ENCORE-->
+    <!-- <div class="parallax"></div> -->
+    <!-- Version fixe -->
+    <img id="banniere" src="./media/Banniere.jfif" alt="Bannière L homme vaut par ce qu'il est non par ce qu'il a">
+
     <header>
         <nav>
             <div class="navigation">
@@ -44,7 +54,7 @@
             </div>
         </nav>
     </header>
-    
+
     <h1 id="quisuisje">Le pitch</h1>
     <h2>Version courte :</h2>
     <blockquote>
@@ -65,6 +75,7 @@
             qu’indépendant pour offrir mes services, mon expérience et mon expertise dans le cadre précis d’une
             mission courte.</p>
     </blockquote>
+
     <!-- Mes compétences -->
     <h1 id="mescompetences">Mes compétences</h1>
     <!-- HTML 5 /  CSS 3 / JAVASCRIPT / TYPESCRIPT /ANGULAR / REACT /  /  / -->
@@ -73,55 +84,146 @@
             <img src="./media/HTML5.png" width="100px" height="100px" alt="logo HTML5">
         </div>
         <div>
-            <img src="./media/CSS3_logo.png" width="80px" height="100px" alt="logo HTML5">
+            <img src="./media/CSS3_logo.png" width="80px" height="100px" alt="logo CSS3">
         </div>
         <div>
-            <img src="./media/JavaScript-logo.png" width="100px" alt="logo HTML5">
+            <img src="./media/JavaScript-logo.png" width="100px" alt="logo Javascript">
         </div>
         <div>
             <img src="./media/angular.png" width="100px" alt="logo Angular">
         </div>
         <div>
-            <img src="./media/react.png" width="150px" alt="logo HTML5">
+            <img src="./media/react.png" width="150px" alt="logo REACT">
         </div>
         <div>
             <img src="./media/C sharp.png" width="100px" alt="logo CSharp">
         </div>
-    </div>    
+    </div>
+
     <!-- Mon expérience -->
     <h1 id="monexperience">Mon expérience</h1>
-    <h2>Entrepreneur (Pistache et Cacahuète)</h2>
-    d’Octobre 2018 à aujourd’hui
+    <div class="experiences">
+        <div class="experience">
+            <!-- Pistache et Cacahuète -->
+            <div>
+                <img src="./media/Petit Logo P&C.png" width="200px" height="150px" alt="logo Pistache et Cacahuète">
+            </div>
+            <div class="descriptionexperience">
+                <div>
+                    <h2>Entrepreneur (Pistache et Cacahuète)</h2>
+                </div>
+                <div>
+                    d’Octobre 2018 à aujourd’hui
+                </div>
+                <div>
+                    Elaboration de l'offre, Mise en place du magasin physique et en ligne.
+                </div>
+            </div>
+        </div>
 
-    Elaboration de l'offre, Mise en place du magasin physique et en ligne.
-    <h2>Ingénieur Etudes et Développements chez GFI (Inetum)</h2>
-    de Juillet 2018 à Juillet 2019
-    Développements .NET en backoffice et web (Angular) pour ARCELOR MITTAL
-    Chef de projet dans des environnements de développement Microsoft en client
-    lourd et web pour Auchan, BNP Paribas, AG2R - La Mondiale, ETO Publicis,
-    ANGDM.
-    <h2>Chef de projet chez GFI</h2>
-    de Novembre 2010 à Juillet 2018
+        <div class="experience">
+            <!--  Full Stack GFI / Inetum -->
+            <div>
+                <img src="./media/RVB_INETUM_PDF_20CM.png" width="300px" height="200px" alt="logo Inetum">
+            </div>
+            <div class="descriptionexperience">
+                <div>
+                    <h2>Ingénieur Etudes et Développements Full Stack chez GFI (Inetum)</h2>
+                </div>
+                <div>
+                    de Juillet 2018 à Juillet 2019
+                </div>
+                <div>
+                    Développements .NET en backoffice et web (Angular) pour ARCELOR MITTAL
+                </div>
+            </div>
+        </div>
 
-    <h2>Ingénieur Etudes et Développements</h2>
-    d’Avril 2004 à Octobre 2010
-    Développements, intégration, rédaction de spécifications dans différents
-    environnements (en ESN : Norsys / Atos / GFI (Inetum))
-    <!-- GFI / Inetum -->
+        <div class="experience">
+            <!-- Chef de projet GFI -->
+            <div>
+                <img src="./media/RVB_INETUM_PDF_20CM.png" width="300px" height="200px" alt="logo Inetum">
+            </div>
+            <div class="descriptionexperience">
+                <div>
+                    <h2>Chef de projet chez GFI (Inetum)</h2>
+                </div>
+                <div>
+                    de Novembre 2010 à Juillet 2018
+                </div>
+                <div>
+                    Chef de projet dans des environnements de développement Microsoft en client
+                    lourd et web pour Auchan, BNP Paribas, AG2R - La Mondiale, ETO Publicis,
+                    ANGDM.
+                </div>
+            </div>
+        </div>
+
+        <div class="experience">
+            <!-- Dev ESN -->
+            <div>
+                <!-- <img src="./media/RVB_INETUM_PDF_20CM.png" width="300px" height="200px" alt="logo Inetum"> -->
+            </div>
+            <div class="descriptionexperience">
+                <div>
+                    <h2>Ingénieur Etudes et Développements</h2>
+                </div>
+                <div>
+                    d’Avril 2004 à Octobre 2010
+                </div>
+                <div>
+                    Développements, intégration, rédaction de spécifications dans différents
+                    environnements (en ESN : Norsys / Atos / GFI (Inetum))
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Ma formation -->
     <h1 id="maformation">Ma formation</h1>
-    <div class="uvhc">
-        Bac +5 (Master TNSI (Technologies Nouvelles et des Systèmes d’Information) à
-        l'UVHC devenu l'Université Polytechnique des Hauts-de-France)
-        <a href="https://www.uphf.fr/">
-            <img src="media/UVHC.png" alt="Logo UVHC">
-        </a>
+    <div class="formations">
+        <div class="formation">
+            <!-- IB Front End -->
+            <div>
+                <a href="https://www.ib-formation.fr/formations-intra/poec/poec-developpeur-front-end-a-lille">
+                    <img src="media/logo_ib.png" width="120px" height="120px" alt="Logo IB Formation">
+                </a>
+            </div>
+            <div class="descriptionformation">
+                <div>
+                    <h2>Formation Front END</h2>
+                </div>
+                <div>
+                    Formation Front END chez IB Formation
+                </div>
+            </div>
+        </div>
+
+        <div class="formation">
+            <!-- UVHC -->
+            <div>
+                <a href="https://www.uphf.fr/">
+                    <img src="media/UVHC.png" alt="Logo UVHC">
+                </a>
+            </div>
+            <div class="descriptionformation">
+                <div>
+                    <h2>Bac +5Bac +5</h2>
+                </div>
+                <div>
+                    Master TNSI (Technologies Nouvelles et des Systèmes d’Information) à
+                    l'UVHC devenu l'Université Polytechnique des Hauts-de-France)
+                </div>                
+            </div>
+        </div>
+        
+        <!-- <div class="polytechnantes">
+            <a href="https://polytech.univ-nantes.fr/">
+                <img src="media/Petit Logo P&C.png" alt="">
+            </a>
+        </div> -->
     </div>
-    <!-- <div class="polytechnantes">
-        <a href="https://polytech.univ-nantes.fr/">
-            <img src="media/Petit Logo P&C.png" alt="">
-        </a>
-    </div> -->
+    
 
     <!-- Mes réalisations -->
     <h1 id="mesrealisations">Mes réalisations</h1>
@@ -140,7 +242,7 @@
             <a href="https://scratch.mit.edu/users/PapaLila/">
                 <img src="media/scratch.png" alt="">
             </a>
-        </div>        
+        </div>
     </div>
 
     <!-- Loisirs -->
@@ -155,9 +257,9 @@
         </li>
         <li>
             bénévole pour Ludinord (évènement et site web)
-        </li>        
+        </li>
     </ul>
-    
+
     , Président de Chtinux (Promotion du
     logiciel libre), Président de comité de parents
     d’élève, Cours d’informatique pour le primaire,
@@ -179,7 +281,7 @@
         <div></div>
         <div class="facebook">
             <a href="https://www.facebook.com/Mounoux">
-                <img src="media/Facebook.png" width="90px" alt="logo facebook" >
+                <img src="media/Facebook.png" width="90px" alt="logo facebook">
             </a>
         </div>
         <!-- <div class="instagram">
